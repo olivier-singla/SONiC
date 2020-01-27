@@ -18,6 +18,7 @@ ZTP support through sonic-management framework
 | :--: | :--------: | :---------------: | ------------------ |
 | 0.1  | 10/10/2019 | Arunsundar Kannan | Initial version    |
 | 0.2  | 01/24/2020 | Olivier Singla    | Document ztp run   |
+| 0.3  | 01/27/2020 | Olivier Singla    | Typo in ztp run    |
 
 # About this Manual
 This document provides general information about the ZTP support inside SONiC management framework.
@@ -76,7 +77,7 @@ The ```ztp enable``` command is used to administratively enable ZTP. When ZTP fe
 
 **ztp run**
 
-The ```ztp run``` command is used to manually restart a new ZTP session. This command deletes the existing */etc/sonic/config_db.json* file and stats ZTP service. It also erases the previous ZTP session data. ZTP configuration is loaded on to the switch and ZTP discovery is performed.
+The ```ztp run``` command is used to manually restart a new ZTP session. This command deletes the existing */etc/sonic/config_db.json* file and starts ZTP service. It also erases the previous ZTP session data. ZTP configuration is loaded on to the switch and ZTP discovery is performed.
 
 **no ztp enable**
 
@@ -103,7 +104,7 @@ N/A
 
 ### 3.2.3 STATE DB
 
-TBD. 
+TBD.
 
 ### 3.2.4 ASIC DB
 
@@ -180,7 +181,7 @@ Success
 
 **sonic_installer list**
 ```
-sonic# show ztp-status 
+sonic# show ztp-status
 ========================================
 ZTP
 ========================================
@@ -247,4 +248,3 @@ N/A
 List unit test cases added for this feature including warm boot.
 
 # 10 Internal Design Information
-
